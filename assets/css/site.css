@@ -39,7 +39,6 @@ nav h2{
 }
 
 
-
 #formContainer {
     display: flex;
     flex-direction: column;
@@ -60,7 +59,7 @@ nav h2{
 
 
 
-
+/* Utility class to hide elements */
 .hidden {
     display: none;
 }

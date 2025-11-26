@@ -1,6 +1,5 @@
-// write cool JS hwere!!
 
-// #region modal stuff
+// #region modal kode
 // grab a handle to the modal button
 const tilmeldButton = document.getElementById('modalTrigger')
 tilmeldButton.addEventListener('click', toggleModal)
@@ -22,11 +21,9 @@ function toggleModal() {
 
 
 
-// #endregion modal stuff
+// #endregion modal kode
 
-
-
-
+// #region form kode
 
 // get submit button reference
 const submitButton = document.getElementById('formSubmit')
@@ -44,6 +41,8 @@ submitButton.addEventListener('click', (event) => {
         console.log('form is NOT valid');
     }
 })
+
+
 
 //---------------------------------------------------------------------
 
@@ -79,14 +78,15 @@ function validateForm() {
         return false
     }
 
-    
+
     /// all tests passed
     showMessage('thanks for submitting the form!')
     return true
 }
 
+// #endregion form kode
 
-// clean ups
+// #region clean ups
 
 // shows a message to the user
 function showMessage(message) {
@@ -102,3 +102,4 @@ function clearForm() {
     document.getElementById('email').value = '';
     document.getElementById('message').innerText = '';
 }   
+// #endregion clean ups
